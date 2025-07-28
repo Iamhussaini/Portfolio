@@ -25,6 +25,7 @@ const About = () => {
 
   return (
     <Box
+      id="about"
       ref={ref}
       sx={{
         background: "linear-gradient(56.5deg,  #2e2e2e 50%, #000000 50%)",
@@ -128,6 +129,12 @@ const About = () => {
           </Box>
           .
         </Typography>
+        {/* Internal link back to Navbar/top */}
+        <div style={{ marginTop: 32 }}>
+          <a href="#home" style={{ color: '#39FF14', textDecoration: 'underline', fontWeight: 600 }}>
+            Back to Top
+          </a>
+        </div>
       </Container>
     </Box>
   );

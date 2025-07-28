@@ -112,7 +112,7 @@ const jobsData = [
 
 const Education: React.FC = () => {
   return (
-    <SectionContainer>
+    <SectionContainer id="education">
       <Container maxWidth="lg">
         <TimelineContainer>
           <Box>

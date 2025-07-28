@@ -2,12 +2,18 @@ import React, { useState } from 'react';
 import { Box, Typography, Card, CardMedia, CardContent, Button, IconButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-const ProjectsContainer = styled(Box)({
+const ProjectsContainer = styled(Box)(({ theme }) => ({
   background: "linear-gradient(70.5deg,  #2e2e2e 50%, #000000 50%)",
   padding: '60px 20px',
   minHeight: '100vh',
   color: 'white',
-});
+  [theme.breakpoints.down('md')]: {
+    minHeight: 'unset',
+  },
+  [theme.breakpoints.down('sm')]: {
+    minHeight: 'unset',
+  },
+}));
 
 const ProjectsGrid = styled(Box)({
   display: 'grid',
@@ -75,6 +81,7 @@ const Dot = styled(IconButton)(({ ...props }) => ({
 }));
 
 const Projects = () => {
+  // Add id to main container for internal linking
   const [activeSlide, setActiveSlide] = useState(0);
 
   const projectSlides = [
@@ -154,7 +161,7 @@ const Projects = () => {
   };
 
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="projects">
       <Typography
         variant="h2"
         align="center"

@@ -18,7 +18,7 @@ const services = [
 
 const Services = () => {
   return (
-    <Box sx={{ background: "linear-gradient(53deg, #2e2e2e 50%, #000000 50% )", py: 8, px: 2, textAlign: 'center' }}>
+    <Box id="services" sx={{ background: "linear-gradient(53deg, #2e2e2e 50%, #000000 50% )", py: 8, px: 2, textAlign: 'center' }}>
       <Typography variant="h2" fontWeight="bold" color="white" mb={4}>
         My Services
       </Typography>

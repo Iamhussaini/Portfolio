@@ -63,6 +63,7 @@ const skills = [
 
 const Skills = () => (
   <Box
+    id="skills"
     sx={{
       background: "linear-gradient(114deg, #000000 50%, #2e2e2e 50%)",
       py: 8,

@@ -1,6 +1,7 @@
 // src/components/Header/Header.js
 import React, { useEffect, useState } from 'react';
 import './Header.css';
+import CV from '../../Images/CV.jpeg'; // Assuming you have a CV file in your images folder
 
 import { FaDownload, FaGithub, FaLinkedin, FaInstagram, FaBehance } from 'react-icons/fa';
 import hussain from '../../Images/hussain.png';
@@ -25,7 +26,23 @@ const Header = () => {
             I really like different projects that solve real problems.
           </p>
           <div className="buttons animate-fade-slide-delay4">
-            <button className="cv-btn"><FaDownload /> Download CV</button>
+            <div className='cv-image' style={{display: 'none'}}>
+              <img src={CV} alt="CV" />
+            </div>
+            <button
+              className="cv-btn"
+              onClick={() => {
+                // Download the CV image file
+                const link = document.createElement('a');
+                link.href = CV;
+                link.download = 'CV.jpeg';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
+              <FaDownload /> Download CV
+            </button>
             <button className="portfolio-btn">Portfolio</button>
           </div>
           <div className="social-icons animate-fade-slide-delay5">
@@ -42,6 +59,9 @@ const Header = () => {
 
         <style>
           {`
+            html {
+              scroll-behavior: smooth;
+            }
             .animate-fade-slide {
               animation: fadeSlideIn 0.8s ease-out both;
             }
