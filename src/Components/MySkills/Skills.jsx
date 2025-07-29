@@ -25,7 +25,7 @@ const skills = [
   },
   {
     name: "JavaScript",
-    value: 60,
+    value: 70,
     logo:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
@@ -37,7 +37,7 @@ const skills = [
   },
   {
     name: "React",
-    value: 50,
+    value: 75,
     logo:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },

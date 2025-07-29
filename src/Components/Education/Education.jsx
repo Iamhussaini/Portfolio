@@ -3,7 +3,7 @@ import { Box, Container, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 const SectionContainer = styled(Box)(({ theme }) => ({
-  background: 'linear-gradient(112deg, #000000 50%, #2e2e2e 50%)',
+  background: 'linear-gradient(108deg, #000000 50%, #2e2e2e 50%)',
   padding: '100px 20px',
   [theme.breakpoints.down('md')]: {
     padding: '80px 16px',
@@ -78,35 +78,30 @@ const TimelineDescription = styled(Typography)({
 
 const educationData = [
   {
-    period: 'January 2020 - December 2023',
-    title: 'Information Systems',
-    company: 'KIU (Karakurum International University)',
+    period: 'Completed - 2024',
+    title: 'Higher Secondary School Certificate (HSSC) – Computer Science',
+    company: 'Unity Public School & College, Gilgit',
     description:
-      "Bachelor's degree in Information Systems with a focus on software development and data management.",
+      "",
   },
-  {
-    period: 'August 2018 - December 2019',
-    title: 'Web Development',
-    company: 'KIU (Karakurum International University)',
-    description:
-      'Specialized course in modern web development technologies and frameworks.',
-  },
+ 
 ];
 
 const jobsData = [
   {
-    period: 'October 2021 - January 2023',
-    title: 'IT Assistant',
-    company: 'Grande Valor Consultoria Empresarial LTDA',
+    period: 'October 2022 - January 2023',
+    title: 'Front-end Developer Intern',
+    company: 'Binary Hub Gilgit ',
     description:
-      'Responsible for system maintenance, user support, and development of internal tools.',
+      'Assisted in building responsive websites using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS. Supported the dev team with UI debugging, layout fixes, and feature development using React.js and Next.js.Gained hands-on experience in real client projects, collaborating with backend developers using Node.js for integration. ',
+    
   },
   {
-    period: 'August 2020 - August 2021',
-    title: 'Front-end Developer (Intern)',
-    company: 'Grande Valor Consultoria Empresarial LTDA',
+    period: 'April 2023 ',
+    title: 'Front-end Developer',
+    company: 'Artcube |  ( Present )',
     description:
-      'Developed responsive web interfaces and collaborated on various client projects.',
+      'Developing modern, responsive web interfaces using React.js, Next.js, Tailwind CSS, and JavaScript. Collaborating closely with designers and backend teams to implement seamless UI/UX and API integrations using Node.js. Optimizing website performance, accessibility, and responsiveness across multiple devices and browsers.',
   },
 ];
 

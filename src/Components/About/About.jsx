@@ -66,12 +66,12 @@ const About = () => {
         >
           I'm{" "}
           <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
-            Thiago Leão
+            M-Hussain
           </Box>
           , I'm 20 years old and I live in
           <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
             {" "}
-            São Vicente
+            Gilgit Pakistan
           </Box>
           -SP.
           <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
@@ -83,9 +83,10 @@ const About = () => {
             {" "}
             UI Designer
           </Box>
-          , I'm passionate about interfaces, from their creation to development.
-          I like to learn more and more about the area, challenges that take me
-          out of my comfort zone are the best.
+          I craft modern, responsive, and pixel-perfect interfaces.
+Love turning creative ideas into clean, functional code.
+Challenges excite me and push me beyond limits.
+From websites to apps — I design, develop, and deliver.
         </Typography>
 
         <Typography
