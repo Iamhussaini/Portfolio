@@ -1,5 +1,6 @@
 // src/components/Header/Header.js
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Header.css';
 import CV from '../../Images/CV.jpeg'; // Assuming you have a CV file in your images folder
 
@@ -13,6 +14,7 @@ const Header = () => {
     setTimeout(() => setAnimate(true), 100);
   }, []);
 
+  const navigate = useNavigate();
   return (
     <>
      
@@ -43,7 +45,12 @@ const Header = () => {
             >
               <FaDownload /> Download CV
             </button>
-            <button className="portfolio-btn">Portfolio</button>
+            <button
+              className="portfolio-btn"
+              onClick={() => navigate('/mycv')}
+            >
+              CV
+            </button>
           </div>
           <div className="social-icons animate-fade-slide-delay5">
             <FaInstagram />

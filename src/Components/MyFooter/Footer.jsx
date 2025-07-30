@@ -73,7 +73,7 @@ const Footer = () => {
               <Phone sx={{ color: '#fff' }} /> +92 369194872
             </Box>
             <Box sx={{ color: '#ccc', mb: 2, display: 'flex', alignItems: 'center', gap: 1 }}>
-              <Mail sx={{ color: '#fff' }} /> mhussain@gmail.com
+              <Mail sx={{ color: '#fff' }} /> hussainsawoo@gmail.com
             </Box>
             <Box sx={{ color: '#ccc', mb: 2, display: 'flex', alignItems: 'center', gap: 1 }}>
               <LocationOn sx={{ color: '#fff' }} /> Gilgit Baltistan , Pakistan
@@ -101,7 +101,7 @@ const Footer = () => {
                       value={userName}
                       onChange={e => setUserName(e.target.value)}
                       InputProps={{ disableUnderline: true }}
-                      sx={{ bgcolor: '#333', input: { color: '#fff' }, label: { color: '#aaa' } }}
+                      sx={{ bgcolor: '#333', input: { color: '#fff' }, label: { color: '#aaa' } , borderRadius: '8px', }}
                       required
                     />
                   </Grid>
@@ -114,7 +114,7 @@ const Footer = () => {
                       value={userEmail}
                       onChange={e => setUserEmail(e.target.value)}
                       InputProps={{ disableUnderline: true }}
-                      sx={{ bgcolor: '#333', input: { color: '#fff' }, label: { color: '#aaa' } }}
+                      sx={{ bgcolor: '#333', input: { color: '#fff' }, label: { color: '#aaa' } , borderRadius: '8px', }}
                       required
                     />
                   </Grid>
@@ -129,7 +129,7 @@ const Footer = () => {
                       value={userSubject}
                       onChange={e => setUserSubject(e.target.value)}
                       InputProps={{ disableUnderline: true }}
-                      sx={{ bgcolor: '#333', input: { color: '#fff' }, label: { color: '#aaa' } }}
+                      sx={{ bgcolor: '#333', input: { color: '#fff' }, label: { color: '#aaa' } , borderRadius: '8px', }}
                       required
                     />
                   </Grid>
@@ -144,7 +144,7 @@ const Footer = () => {
                       value={userMessage}
                       onChange={e => setUserMessage(e.target.value)}
                       InputProps={{ disableUnderline: true }}
-                      sx={{ bgcolor: '#333', textarea: { color: '#fff' }, label: { color: '#aaa' }, padding: '5px' }}
+                      sx={{ bgcolor: '#333', textarea: { color: '#fff' }, label: { color: '#aaa' },  borderRadius: '8px', width: '110%' }}
                       required
                     />
                   </Grid>

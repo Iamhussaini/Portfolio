@@ -45,19 +45,19 @@ const ProjectContent = styled(CardContent)({
   color: 'white',
 });
 
-const ViewMoreButton = styled(Button)({
-  backgroundColor: 'hsl(120, 100%, 50%)',
-  color: 'black',
-  borderRadius: '25px',
-  padding: '8px 20px',
-  fontWeight: 'bold',
-  textTransform: 'none',
-  marginTop: '15px',
-  '&:hover': {
-    backgroundColor: 'hsl(120, 100%, 60%)',
-    boxShadow: '0 0 20px hsl(120, 100%, 50%)',
-  },
-});
+// const ViewMoreButton = styled(Button)({
+//   backgroundColor: 'hsl(120, 100%, 50%)',
+//   color: 'black',
+//   borderRadius: '25px',
+//   padding: '8px 20px',
+//   fontWeight: 'bold',
+//   textTransform: 'none',
+//   marginTop: '15px',
+//   '&:hover': {
+//     backgroundColor: 'hsl(120, 100%, 60%)',
+//     boxShadow: '0 0 20px hsl(120, 100%, 50%)',
+//   },
+// });
 
 const DotsContainer = styled(Box)({
   display: 'flex',
@@ -195,7 +195,7 @@ const Projects = () => {
               <Typography variant="body2" sx={{ color: '#ccc', marginBottom: '15px', lineHeight: 1.6 }}>
                 {project.description}
               </Typography>
-              <ViewMoreButton size="small">View more</ViewMoreButton>
+              {/* <ViewMoreButton size="small">View more</ViewMoreButton> */}
             </ProjectContent>
           </ProjectCard>
         ))}

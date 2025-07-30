@@ -28,7 +28,7 @@ const About = () => {
       id="about"
       ref={ref}
       sx={{
-        background: "linear-gradient(56.5deg,  #2e2e2e 50%, #000000 50%)",
+        background: "linear-gradient(62deg,  #2e2e2e 50%, #000000 50%)",
         color: "white",
         py: 8,
         px: { xs: 3, md: 12 },
