@@ -41,7 +41,7 @@ const TimelineItem = styled(Box)(({ theme }) => ({
     top: '0',
     width: '15px',
     height: '15px',
-    backgroundColor: 'hsl(142, 76%, 36%)',
+    backgroundColor: 'hsla(170, 76%, 36%, 1.00)',
     borderRadius: '50%',
   },
   [theme.breakpoints.down('sm')]: {
@@ -52,7 +52,7 @@ const TimelineItem = styled(Box)(({ theme }) => ({
 
 const TimelinePeriod = styled(Typography)({
   fontSize: '14px',
-  color: '#39FF14',
+  color: '#2e7375',
   fontWeight: 600,
   marginBottom: '8px',
 });
@@ -112,10 +112,12 @@ const Education: React.FC = () => {
         <TimelineContainer>
           <Box>
             <Typography
-              variant="h3"
+              variant="h2"
+               fontFamily={"fantasy"}
+          letterSpacing={"0.2rem"}
               sx={{
                 fontSize: { xs: '1.6rem', sm: '2rem', md: '2.5rem' },
-                fontWeight: 900,
+              
                 color: '#ffffff',
                 marginBottom: 4,
               }}
@@ -134,10 +136,12 @@ const Education: React.FC = () => {
 
           <Box>
             <Typography
-              variant="h3"
+              variant="h2"
+               fontFamily={"fantasy"}
+          letterSpacing={"0.2rem"}
               sx={{
                 fontSize: { xs: '1.6rem', sm: '2rem', md: '2.5rem' },
-                fontWeight: 900,
+               
                 color: '#ffffff',
                 marginBottom: 4,
               }}

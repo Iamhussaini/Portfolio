@@ -52,10 +52,11 @@ const About = () => {
         <Typography
           ref={headingRef}
           variant="h2"
-          fontWeight="bold"
+          
           gutterBottom
           className="fade-in"
-          
+          fontFamily={"fantasy"}
+          letterSpacing={"0.2rem"}
         >
           ABOUT ME
         </Typography>
@@ -65,21 +66,21 @@ const About = () => {
           sx={{ color: "#ccc", fontSize: "1.125rem", lineHeight: 1.8 }}
         >
           I'm{" "}
-          <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
+          <Box component="span" sx={{ color: "#2e7375", fontWeight: 600 }}>
             M-Hussain
           </Box>
           , I'm 20 years old and I live in
-          <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
+          <Box component="span" sx={{ color: "#2e7375", fontWeight: 600 }}>
             {" "}
             Gilgit Pakistan
           </Box>
           -SP.
-          <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
+          <Box component="span" sx={{ color: "#2e7375", fontWeight: 600 }}>
             {" "}
             Front-end developer
           </Box>{" "}
           and
-          <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
+          <Box component="span" sx={{ color: "#2e7375", fontWeight: 600 }}>
             {" "}
             UI Designer
           </Box>
@@ -99,32 +100,32 @@ From websites to apps — I design, develop, and deliver.
           }}
         >
           I have prototyped and developed
-          <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
+          <Box component="span" sx={{ color: "#2e7375", fontWeight: 600 }}>
             {" "}
             Landing Pages
           </Box>
           ,
-          <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
+          <Box component="span" sx={{ color: "#2e7375", fontWeight: 600 }}>
             {" "}
             Sites
           </Box>
           ,
-          <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
+          <Box component="span" sx={{ color: "#2e7375", fontWeight: 600 }}>
             {" "}
             E-commerces
           </Box>
           ,
-          <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
+          <Box component="span" sx={{ color: "#2e7375", fontWeight: 600 }}>
             {" "}
             E-mails Marketing
           </Box>
           ,
-          <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
+          <Box component="span" sx={{ color: "#2e7375", fontWeight: 600 }}>
             {" "}
             Apps
           </Box>{" "}
           and
-          <Box component="span" sx={{ color: "#39FF14", fontWeight: 600 }}>
+          <Box component="span" sx={{ color: "#2e7375", fontWeight: 600 }}>
             {" "}
             Programs
           </Box>
@@ -132,7 +133,7 @@ From websites to apps — I design, develop, and deliver.
         </Typography>
         {/* Internal link back to Navbar/top */}
         <div style={{ marginTop: 32 }}>
-          <a href="#home" style={{ color: '#39FF14', textDecoration: 'underline', fontWeight: 600 }}>
+          <a href="#home" style={{ color: '#2e7375', textDecoration: 'underline', fontWeight: 600 }}>
             Back to Top
           </a>
         </div>

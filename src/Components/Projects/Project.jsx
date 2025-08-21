@@ -3,9 +3,9 @@ import { Box, Typography, Card, CardMedia, CardContent, Button, IconButton } fro
 import { styled } from '@mui/material/styles';
 
 const ProjectsContainer = styled(Box)(({ theme }) => ({
-  background: "linear-gradient(70.5deg,  #2e2e2e 50%, #000000 50%)",
+  background: "linear-gradient(66.5deg,  #2e2e2e 50%, #000000 50%)",
   padding: '60px 20px',
-  minHeight: '100vh',
+  // minHeight: '100vh',
   color: 'white',
   [theme.breakpoints.down('md')]: {
     minHeight: 'unset',
@@ -31,7 +31,7 @@ const ProjectCard = styled(Card)({
   transition: 'transform 0.3s ease, box-shadow 0.3s ease',
   '&:hover': {
     transform: 'translateY(-10px)',
-    boxShadow: '0 20px 40px rgba(0, 255, 0, 0.2)',
+    boxShadow: '0 20px 40px rgba(6, 73, 85, 0.2)',
   },
 });
 
@@ -72,11 +72,11 @@ const Dot = styled(IconButton)(({ ...props }) => ({
   borderRadius: '50%',
   padding: 0,
   minWidth: 'auto',
-  backgroundColor: props.active ? 'hsl(120, 100%, 50%)' : '#555',
+  backgroundColor: props.active ? '#2e7375' : '#555',
   transition: 'all 0.3s ease',
   '&:hover': {
-    backgroundColor: props.active ? 'hsl(120, 100%, 60%)' : '#777',
-    boxShadow: props.active ? '0 0 15px hsl(120, 100%, 50%)' : 'none',
+    backgroundColor: props.active ? 'hsla(204, 100%, 60%, 1.00)' : '#777',
+    boxShadow: props.active ? '0 0 15px hsl(204, 100%, 60%)' : 'none',
   },
 }));
 
@@ -165,11 +165,13 @@ const Projects = () => {
       <Typography
         variant="h2"
         align="center"
+         fontFamily={"fantasy"}
+          letterSpacing={"0.2rem"}
         sx={{
-          fontWeight: 'bold',
+          
           marginBottom: '50px',
           fontSize: { xs: '2rem', md: '3rem' },
-          letterSpacing: '2px',
+          
         }}
       >
         PROJECTS
@@ -188,11 +190,11 @@ const Projects = () => {
               </Typography>
               <Typography
                 variant="body2"
-                sx={{ color: 'hsl(120, 100%, 50%)', fontWeight: '500', marginBottom: '10px' }}
+                sx={{ color: '#2e7375', fontWeight: '500', marginBottom: '10px' }}
               >
                 {project.category}
               </Typography>
-              <Typography variant="body2" sx={{ color: '#ccc', marginBottom: '15px', lineHeight: 1.6 }}>
+              <Typography variant="body2" sx={{ color: '#ccc', lineHeight: 1.6 }}>
                 {project.description}
               </Typography>
               {/* <ViewMoreButton size="small">View more</ViewMoreButton> */}

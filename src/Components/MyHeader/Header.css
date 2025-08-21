@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -11,6 +12,7 @@
   padding: 60px 100px;
   flex-wrap: wrap;
   overflow: hidden;
+ 
 }
 
 .hero-content {
@@ -20,10 +22,12 @@
 }
 
 .hero-content h2 {
-  color: #39FF14;
-  font-size: 22px;
+  color: #2e7375;
+  font-size: 25px;
   margin-bottom: 10px;
-  font-weight: bold;
+  /* font-family: fantasy ; */
+   letter-spacing: 0.2rem;
+          
 }
 
 .hero-content h1 {
@@ -63,15 +67,15 @@
 .cv-btn {
   background-color: #222;
   color: white;
-  border: 1px solid #39FF14;
+  border: 1px solid #2e7375;
 }
 
 .portfolio-btn {
-  background-color: #39FF14;
+  background-color: #2e7375;
   color: black;
 }
 .portfolio-btn:hover {
-  background-color:  #00cc00 ;
+  background-color:  #2e7375 ;
 }
 
 .social-icons {
@@ -92,8 +96,8 @@
 }
 
 .hero-image img {
-  width: 120%;
-  filter: drop-shadow(1px 1px 20px #37ff1477);
+  width: 90%;
+  filter: drop-shadow(1px 1px 10px #2e7375);
 }
 
 /* Responsive */

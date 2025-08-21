@@ -58,7 +58,8 @@ const Footer = () => {
        >
           {/* Left: Contact Info */}
           <Grid item xs={12} md={5}>
-            <Typography variant="h5" sx={{ color: '#39FF14 ', 
+            <Typography variant="h5"  fontFamily={"fantasy"}
+          letterSpacing={"0.2rem"} sx={{ color: '#2e7375', 
                mb: 2 }}>
               CONTACT
             </Typography>
@@ -154,12 +155,12 @@ const Footer = () => {
                     type="submit"
                     variant="contained"
                     sx={{
-                      bgcolor: '#00ff00',
-                      color: '#000',
+                      bgcolor: '#2e7375',
+                      color: '#fff7f7ff',
                       fontWeight: 'bold',
                       px: 4,
                       borderRadius: '8px',
-                      '&:hover': { bgcolor: '#00cc00' },
+                      '&:hover': { bgcolor: '#2e7375' },
                     }}
                     disabled={sending}
                   >
@@ -168,7 +169,7 @@ const Footer = () => {
                 </Grid>
                 {sent && (
                   <Grid item xs={12}>
-                    <Typography sx={{ color: '#39FF14', mt: 1 }}>Message sent successfully!</Typography>
+                    <Typography sx={{ color: '#2e7375', mt: 1 }}>Message sent successfully!</Typography>
                   </Grid>
                 )}
                 {error && (

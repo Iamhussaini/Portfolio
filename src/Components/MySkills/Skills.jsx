@@ -65,7 +65,7 @@ const Skills = () => (
   <Box
     id="skills"
     sx={{
-      background: "linear-gradient(114deg, #000000 50%, #2e2e2e 50%)",
+      background: "linear-gradient(113.5deg, #000000 50%, #2e2e2e 50%)",
       py: 8,
       px: { xs: 3, md: 12 },
       textAlign: "center",
@@ -73,7 +73,13 @@ const Skills = () => (
     }}
   >
     <Container maxWidth="md">
-      <Typography variant="h2" fontWeight="bold" gutterBottom>
+      <Typography
+       variant="h2"
+        
+         gutterBottom
+          fontFamily={"fantasy"}
+          letterSpacing={"0.2rem"}
+          >
         My Skills
       </Typography>
       <Grid container spacing={3} justifyContent="center">
@@ -98,7 +104,7 @@ const Skills = () => (
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                boxShadow: 'inset 0 0 10px #39FF14',
+                boxShadow: 'inset 0 0 10px #2e7375',
                 
               }}
             >
@@ -113,7 +119,7 @@ const Skills = () => (
                 </Typography>
                 <Typography
                   variant="body2"
-                  sx={{ color: "#39FF14", fontWeight: 600 }}
+                  sx={{ color: "#2e7375", fontWeight: 600 }}
                 >
                   {skill.value}%
                 </Typography>
@@ -125,7 +131,7 @@ const Skills = () => (
                     height: 10,
                     borderRadius: 5,
                     backgroundColor: "#333",
-                    "& .MuiLinearProgress-bar": { backgroundColor: "#39FF14" },
+                    "& .MuiLinearProgress-bar": { backgroundColor: "#2e7375" },
                   }}
                 />
               </CardContent>

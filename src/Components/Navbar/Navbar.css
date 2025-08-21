@@ -23,7 +23,7 @@
   display: none;
   position: absolute;
   right: 20px;
-  color: #39FF14;
+  color: #2e7375;
   font-size: 24px;
   cursor: pointer;
 }
@@ -40,13 +40,13 @@
   text-decoration: none;
   color: #ccc;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover,
 .nav-links li a.active {
-  color: #39FF14;
+  color:#2e7375;
 }
 
 @media (max-width: 768px) {

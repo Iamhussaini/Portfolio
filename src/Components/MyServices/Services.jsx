@@ -7,19 +7,26 @@ import ShareIcon from '@mui/icons-material/Share';
 
 const services = [
   [
-    { icon: <WebIcon sx={{ color: '#39FF14', fontSize: 30 }} />, title: 'Web Development' },
-    { icon: <DesignIcon sx={{ color: '#39FF14', fontSize: 30 }} />, title: 'UI Design' }
+    { icon: <WebIcon sx={{ color: '#2e7375', fontSize: 30 }} />, title: 'Web Development' },
+    { icon: <DesignIcon sx={{ color: '#2e7375', fontSize: 30 }} />, title: 'UI Design' }
   ],
   [
-    { icon: <PhoneAndroidIcon sx={{ color: '#39FF14', fontSize: 30 }} />, title: 'Mobile Development' },
-    { icon: <ShareIcon sx={{ color: '#39FF14', fontSize: 30 }} />, title: 'Social Media Design' }
+    { icon: <PhoneAndroidIcon sx={{ color: '#2e7375', fontSize: 30 }} />, title: 'Mobile Development' },
+    { icon: <ShareIcon sx={{ color: '#2e7375', fontSize: 30 }} />, title: 'Social Media Design' }
   ]
 ];
 
 const Services = () => {
   return (
     <Box id="services" sx={{ background: "linear-gradient(53deg, #2e2e2e 50%, #000000 50% )", py: 8, px: 2, textAlign: 'center' }}>
-      <Typography variant="h2" fontWeight="bold" color="white" mb={4}>
+      <Typography 
+      variant="h2"
+      
+        color="white"
+         mb={4}
+          fontFamily={"fantasy"}
+          letterSpacing={"0.2rem"}
+          >
         My Services
       </Typography>
 
